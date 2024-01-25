@@ -13,12 +13,14 @@
 .btn-primary {
     border-radius: 8px;
     color: #FFF;
-    font-size: 1.25rem;
+    font-size: 1rem;
     background: #FF900E;
     padding: 20px 25px;
     color: #FFF;
     cursor: pointer;
     border: 0;
+    width: 170px;
+    height: 60px;
 }
 
 
@@ -26,8 +28,14 @@
 /* header  style */
 
 header{
-    background: rgb(212, 214, 164);
-    padding: 50px 240px;
+    background: white;
+    padding: 50px 60px;
+}
+
+.herot{
+    display: flex inline;
+    gap: 5px;
+    float: left;
 }
 .home{
     color: #FF5400;
@@ -39,7 +47,8 @@ font-weight: 700;
 line-height: normal;
 }
 .hb{
-    color: #000000;
+ float: right;
+color: #000000;
 text-align: center;
 font-family: Mulish;
 font-size: 18px;
@@ -68,6 +77,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 
@@ -90,28 +100,173 @@ nav li a{
 
 /* banner styles */
 
-.bar{
+.banner {
     display: flex;
-    justify-content: space-between;
-}
+    justify-content: center;
+    align-items: center;
+    position: relative; /* If the image has absolute positioning, add this */
+  }
 
+  .banner .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .banner .bar {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-.banner-content {
-    max-width: 800px;
-    text-align: center;
-    margin: 0 auto;
+.bar{
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+background: rgba(255, 255, 255, 0.30);
+    
+   
 }
 
 .banner-title {
     font-size: 4rem;
     font-weight: 700;
     color: #f3f3f3;
+    position: relative;
+    
+
 }
+    
+
 .band{
     color: rgb(243, 243, 243);
 }
 
-.banner img{
-    margin-top: 10px ;
-    width: 100%;
+.w{
+ width: 150px;
+height: 60px;
+flex-shrink: 0;
+border-radius: 8px;
+background: #FFF;
 }
+
+/* end header  */
+
+/* start main  */
+.tour1{
+    padding: 50px 60px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+.text{
+
+    display:  grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap:1px ;
+    
+}
+.ol1{
+    display:  grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4px;    
+
+}
+
+/* dimage */
+.dstn{
+    padding: 50px 60px;
+    text-align: center;
+}
+.text2{
+margin-bottom: 50px;
+
+}
+/* .dimg{
+    justify-content: space-around;
+} */
+
+.ly1{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.ly2{
+    display: flex;
+    justify-content: space-around; 
+    margin-bottom: 20px;}
+
+.ly3{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* why */
+
+.why{
+    padding: 10px 60px;
+    text-align: center;
+
+}
+.up{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .card-container {
+    display: flex;
+    justify-content: space-around;
+    
+} */
+
+ .card{
+
+    border-radius: 8px;
+    border: 1px seagreen solid;
+    text-align: left;
+    padding: 40px 30px;
+}
+ .card-title{
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+ .card-stats{
+    font-size: 1.5rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* c3 */
+.why1{
+    padding: 50px 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.card3{
+     
+    border-radius: 8px;
+    border: 1px seagreen solid;
+    text-align: left;
+    padding: 40px 30px;
+    width: 400px;
+    height: 120px; 
+}
+
+
+/* deals */
+
+.deals{
+
+    padding: 50px 60px;
+    text-align: center;
+
+}
+
