@@ -14,7 +14,7 @@
     border-radius: 8px;
     color: #FFF;
     font-size: 1rem;
-    background: #FF900E;
+    background: #ff670fef;
     padding: 20px 25px;
     color: #FFF;
     cursor: pointer;
@@ -177,34 +177,81 @@ background: #FFF;
 
 }
 
-/* dimage */
-.dstn{
+/* choose destination dimage */
+.dstn {
     padding: 50px 60px;
     text-align: center;
 }
-.text2{
-margin-bottom: 50px;
 
+.text2 {
+    margin-bottom: 50px;
 }
-/* .dimg{
-    justify-content: space-around;
-} */
 
-.ly1{
+.dimg {
+    justify-content: space-around;
+}
+
+.ly1,
+.ly2,
+.ly3 {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
 }
 
-.ly2{
+.image-container {
+    text-align: center;
     display: flex;
-    justify-content: space-around; 
-    margin-bottom: 20px;}
-
-.ly3{
-    display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    
+    align-items: center;
+    position: relative;
 }
+
+.image-container img {
+    max-width: 100%;
+}
+
+.image-container .d1 , .d2 ,.d4 , .d6 , .d7 {
+    position: absolute;
+    bottom: 100px;
+    right: 220px;
+    height: 30px;
+    border-radius: 16px;
+    color: #FFF;
+    font-size: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+    .image-container .d3 , .d5{
+        position: absolute;
+        bottom: 100px;
+        right: 100px;
+        height: 30px;
+        border-radius: 16px;
+        color: #FFF;
+        font-size: 2rem;
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    .image-container .d4 {
+
+        position: absolute;
+        bottom: 100px;
+        right: 150px;
+        height: 30px;
+        border-radius: 16px;
+        color: #FFF;
+        font-size: 2rem;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
 
 /* why */
 
@@ -270,3 +317,69 @@ margin-bottom: 50px;
 
 }
 
+.pic1{
+    position: relative;
+  }
+
+  .pic2{
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    height: 350px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    padding-left: 20px;
+    padding-right: 20px;}
+
+
+     .text-block2 {
+        margin-left: 20px;
+        position: absolute;
+        bottom: 70px;
+        left: 20 px;
+        height: 350px; /* Adjust width if needed */
+        border-radius: 16px;
+        border: 2px solid #FFF;
+        background: rgba(255, 255, 255, 0.80);
+        backdrop-filter: blur(2.5px);
+        padding: 20px; /* Combine padding-left and padding-right */
+        
+    }
+
+   
+    .tl{
+ display: flex ;
+justify-content: space-around;
+color: #5A5A5D;
+font-family: Mulish;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+
+    .seeall{
+        margin-top: 20px;
+        border-radius: 8px;
+        color: #FFF;
+        font-size: 1rem;
+        background: #ff670fef;
+        padding: 20px 25px;
+        color: #FFF;
+        cursor: pointer;
+        border: 0;
+        width: 170px;
+        height: 70px;}
+
+
+        @media screen and (max-width:576px)
+            {
+            
+            }
