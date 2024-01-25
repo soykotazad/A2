@@ -275,8 +275,8 @@ background: #FFF;
 
     border-radius: 8px;
     border-radius: 16px;
-border: 1px solid rgba(251, 181, 99, 0.20);
-background: rgba(251, 181, 99, 0.05);
+border: 1px solid rgba(182, 131, 72, 0.2);
+background: rgba(251, 180, 99, 0.288);
     text-align: left;
     padding: 40px 30px;
     
@@ -304,8 +304,8 @@ background: rgba(251, 181, 99, 0.05);
      
     border-radius: 8px;
     border-radius: 16px;
-border: 1px solid rgba(251, 181, 99, 0.20);
-background: rgba(251, 181, 99, 0.05);
+border: 1px solid rgba(179, 130, 76, 0.2);
+background: rgba(119, 90, 224, 0.267);
     text-align: left;
     padding: 40px 30px;
     width: 400px;
@@ -621,6 +621,18 @@ line-height: normal;
                 backdrop-filter: blur(2.5px);
                 
                 
+            }
+
+            .news{
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .footer{
+                display: flex;
+                flex-direction: column;
+
             }
 
 
